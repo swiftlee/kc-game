@@ -1,0 +1,34 @@
+name: KCGame
+main: net.jmdev.Main
+version: 1.0
+author: SwiftLee
+description: KCGame for KingdomCrashers.
+
+commands:
+ forcestart:
+   usage: /<command>
+   description: "Force start a game."
+ chop:
+  usage: /<command>
+  description: Frick Kedric.
+ dance:
+  usage: /<command>
+  description: Time for a party.
+ setlevel:
+  usage: /<command>
+  description: Set a player level once game has started.
+ endgame:
+  usage: /<command>
+  description: Force end a game.
+
+permissions:
+ kc:
+  gameStart:
+   description: "Players with permission can force start a game."
+   default: op
+  level:
+   description: "Players with permission can set a player's level."
+   default: op
+  endgame:
+   description: "Players with permission can force end a game."
+   default: op

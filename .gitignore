@@ -1,0 +1,12 @@
+.idea
+META-INF
+src/test
+target
+lib
+
+.DS_Store
+.buildpath
+.project
+_composer.json
+
+dependency-reduced-pom.xml

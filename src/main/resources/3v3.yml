@@ -1,0 +1,120 @@
+# This tab list should be shown to players on the factions server.
+showTo: '${viewer server} == "EU3v3-01" or ${viewer server} == "EU3v3-02" or ${viewer server} == "EU3v3-03" or ${viewer server} == "EU3v3-04" or ${viewer server} == "EU3v3-05" or ${viewer server} == "EU3v3-06" or ${viewer server} == "EU3v3-07" or ${viewer server} == "EU3v3-08" or ${viewer server} == "EU3v3-09" or ${viewer server} == "EU3v3-10" or ${viewer server} == "EU3v3-11" or ${viewer server} == "EU3v3-12"'
+# Priority should be higher than the one of the default tab list.
+priority: 26
+type: FIXED_SIZE
+
+showHeaderFooter: true
+
+header:
+- '&c&lPLAY.KINGDOMCRASHERS.NET'
+
+headerAnimationUpdateInterval: 0.2
+
+footer:
+- |-
+  &8&l${viewer server} &7${viewer ping} * &e&nhttps://kingdomcrashers.net
+  &a${playerset:global size} &7currently online (${playerset:currentserver size} here)
+
+footerAnimationUpdateInterval: 0.8
+
+
+defaultIcon: "colors/dark_gray.png"
+defaultPing: 1000
+size: 80
+
+playerSets:
+  # All players
+  global:
+    filter: "true"
+  currentserver:
+    filter: |-
+      ${player server} == ${viewer server}
+
+components:
+- !table
+  columns:
+    0:
+    - {text: "   &a&nYour Turrets", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&7Lane 1:", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&a♜ &a&lHP &a1500&7/&a1500", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&a♜ &a&lHP &a1500&7/&a1500", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&a♜ &a&lHP &a1500&7/&a1500", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&7Lane 2:", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&a♜ &a&lHP &a1500&7/&a1500", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&a♜ &a&lHP &a1500&7/&a1500", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&a♜ &a&lHP &a1500&7/&a1500", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    1:
+    - {text: "      &e&NChampions", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&7Your Team:", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&fPlayername &7- &aHP 0/000", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&fPlayername &7- &aHP 0/000", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&fPlayername &7- &aHP 0/000", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&7Enemy Team:", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&fPlayername &7- &aHP 0/000", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&fPlayername &7- &aHP 0/000", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "&fPlayername &7- &aHP 0/000", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    2:
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    3:
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}
+    - {text: "", icon: "colors/dark_gray.png", ping: 0}

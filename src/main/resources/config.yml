@@ -1,0 +1,20 @@
+# INITIAL JOIN
+onJoin:
+ title: '&7Champion Selection'
+ subtitle: '&7will commence soon...'
+
+# IF THERE ARE ENOUGH PLAYERS TO START CHAMPION SELECTION
+onEnoughPlayers:
+ # GameMode Type can be: '1v1', '3v3' or '5v5'
+ gameModeType: '1v1'
+ countdownFrom: 3
+ title: "&e&l{number}"
+
+# CHAMPION SELECTION
+championSelect:
+ time: 60
+
+# GAME START
+gameStart:
+ blueFence: 'lobby,-868,8,-1186'
+ redFence: 'lobby,-861,8,-904'
